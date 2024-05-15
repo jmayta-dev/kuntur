@@ -8,6 +8,7 @@ public interface IBioRepository : IDisposable
     Company GetCompanyByJobId(int JobId, CancellationToken cancellationToken = default);
     int CreateCompany(Company company, CancellationToken cancellationToken = default);
     int CreateJob(Job job, CancellationToken cancellationToken = default);
+    Task<int> CreatePerson(Person person, CancellationToken cancellationToken = default);
     int CreateProject(Project project, CancellationToken cancellationToken = default);
     int CreateSocialNetwork(SocialNetwork socialNetwork, CancellationToken cancellationToken = default);
     int CreateTechnology(Technology technology, CancellationToken cancellationToken = default);

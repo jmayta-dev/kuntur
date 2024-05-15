@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kuntur", "Kuntur", "{E9C808
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MW.KUNTUR.Bio.Domain", "Bio\MW.KUNTUR.Bio.Domain\MW.KUNTUR.Bio.Domain.csproj", "{29D8F1B6-AA54-485F-943F-784032BABBCB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MW.KUNTUR.Bio.Application", "Bio\MW.KUNTUR.Bio.Application\MW.KUNTUR.Bio.Application.csproj", "{52C9BE4D-E93E-43B3-B7EC-073BA9EA5677}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,11 +23,16 @@ Global
 		{29D8F1B6-AA54-485F-943F-784032BABBCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29D8F1B6-AA54-485F-943F-784032BABBCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29D8F1B6-AA54-485F-943F-784032BABBCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52C9BE4D-E93E-43B3-B7EC-073BA9EA5677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52C9BE4D-E93E-43B3-B7EC-073BA9EA5677}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52C9BE4D-E93E-43B3-B7EC-073BA9EA5677}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52C9BE4D-E93E-43B3-B7EC-073BA9EA5677}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{29D8F1B6-AA54-485F-943F-784032BABBCB} = {3069B489-A299-4C33-96F0-4776E3ADC9CE}
+		{52C9BE4D-E93E-43B3-B7EC-073BA9EA5677} = {3069B489-A299-4C33-96F0-4776E3ADC9CE}
 	EndGlobalSection
 EndGlobal
