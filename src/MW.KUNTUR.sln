@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kuntur", "Kuntur", "{E9C808
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MW.KUNTUR.Bio.Domain", "Bio\MW.KUNTUR.Bio.Domain\MW.KUNTUR.Bio.Domain.csproj", "{29D8F1B6-AA54-485F-943F-784032BABBCB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MW.KUNTUR.Blog.Domain", "Blog\MW.KUNTUR.Blog.Domain\MW.KUNTUR.Blog.Domain.csproj", "{C6FF9C17-0EA7-474F-8CDC-1BBF82B86209}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MW.KUNTUR.Blog.Application", "Blog\MW.KUNTUR.Blog.Application\MW.KUNTUR.Blog.Application.csproj", "{2A54A13D-8644-465E-8022-18BE98107646}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,11 +25,21 @@ Global
 		{29D8F1B6-AA54-485F-943F-784032BABBCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29D8F1B6-AA54-485F-943F-784032BABBCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29D8F1B6-AA54-485F-943F-784032BABBCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6FF9C17-0EA7-474F-8CDC-1BBF82B86209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6FF9C17-0EA7-474F-8CDC-1BBF82B86209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6FF9C17-0EA7-474F-8CDC-1BBF82B86209}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6FF9C17-0EA7-474F-8CDC-1BBF82B86209}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A54A13D-8644-465E-8022-18BE98107646}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A54A13D-8644-465E-8022-18BE98107646}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A54A13D-8644-465E-8022-18BE98107646}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A54A13D-8644-465E-8022-18BE98107646}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{29D8F1B6-AA54-485F-943F-784032BABBCB} = {3069B489-A299-4C33-96F0-4776E3ADC9CE}
+		{C6FF9C17-0EA7-474F-8CDC-1BBF82B86209} = {59116A65-5C90-4E50-9741-5E748ACB6D4D}
+		{2A54A13D-8644-465E-8022-18BE98107646} = {59116A65-5C90-4E50-9741-5E748ACB6D4D}
 	EndGlobalSection
 EndGlobal
