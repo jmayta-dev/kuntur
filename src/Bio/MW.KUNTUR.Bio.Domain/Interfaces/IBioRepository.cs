@@ -2,7 +2,7 @@ using MW.KUNTUR.Bio.Domain.Entities;
 
 namespace MW.KUNTUR.Bio.Domain.Interfaces;
 
-public interface IBioRepository : IDisposable
+public interface IBioRepository
 {
     Company GetCompanyById(int CompanyId, CancellationToken cancellationToken = default);
     Company GetCompanyByJobId(int JobId, CancellationToken cancellationToken = default);
@@ -18,7 +18,7 @@ public interface IBioRepository : IDisposable
     IReadOnlyCollection<SocialNetwork> GetSocialNetworksByPersonId(int PersonId, CancellationToken cancellationToken = default);
     IReadOnlyCollection<Technology> GetTechnologiesByProjectId(int ProjectId, CancellationToken cancellationToken = default);
     Job GetJobById(int JobId, CancellationToken cancellationToken = default);
-    Person GetPersonAsync(int PersonId, CancellationToken cancellationToken = default);
+    Person GetPersonByIdAsync(int PersonId, CancellationToken cancellationToken = default);
     Project GetProjectById(int ProjectId, CancellationToken cancellationToken = default);
     SocialNetwork GetSocialNetworkById(int SocialNetworkId, CancellationToken cancellationToken = default);
     Technology GetTechnologyById(int TechnologyId, CancellationToken cancellationToken = default);

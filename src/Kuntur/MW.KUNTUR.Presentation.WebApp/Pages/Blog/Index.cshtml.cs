@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace MW.KUNTUR.Presentation.WebApp.Pages;
+namespace MW.KUNTUR.Presentation.WebApp.Pages.Blog;
 
 public class IndexModel : PageModel
 {

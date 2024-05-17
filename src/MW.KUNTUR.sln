@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MW.KUNTUR.Bio.Application",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MW.KUNTUR.Presentation.WebApp", "Kuntur\MW.KUNTUR.Presentation.WebApp\MW.KUNTUR.Presentation.WebApp.csproj", "{C5E56E6A-C4E3-4C2F-9648-3FE189BAB197}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MW.KUNTUR.Bio.Persistence.CosmosDb", "Bio\MW.KUNTUR.Bio.Persistence.CosmosDb\MW.KUNTUR.Bio.Persistence.CosmosDb.csproj", "{9ECAB316-1817-40EC-836D-55F205C614BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{C5E56E6A-C4E3-4C2F-9648-3FE189BAB197}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5E56E6A-C4E3-4C2F-9648-3FE189BAB197}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5E56E6A-C4E3-4C2F-9648-3FE189BAB197}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ECAB316-1817-40EC-836D-55F205C614BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ECAB316-1817-40EC-836D-55F205C614BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ECAB316-1817-40EC-836D-55F205C614BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ECAB316-1817-40EC-836D-55F205C614BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,5 +61,6 @@ Global
 		{2A54A13D-8644-465E-8022-18BE98107646} = {59116A65-5C90-4E50-9741-5E748ACB6D4D}
 		{C376726B-F20B-4C19-952A-D8A675496D7B} = {3069B489-A299-4C33-96F0-4776E3ADC9CE}
 		{C5E56E6A-C4E3-4C2F-9648-3FE189BAB197} = {E9C8080D-BACC-4EA2-9485-61032E4E57FE}
+		{9ECAB316-1817-40EC-836D-55F205C614BF} = {3069B489-A299-4C33-96F0-4776E3ADC9CE}
 	EndGlobalSection
 EndGlobal

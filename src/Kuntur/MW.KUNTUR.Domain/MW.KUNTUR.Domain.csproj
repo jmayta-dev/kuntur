@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Bio\MW.KUNTUR.Bio.Domain\MW.KUNTUR.Bio.Domain.csproj" />
+    <ProjectReference Include="..\..\Blog\MW.KUNTUR.Blog.Domain\MW.KUNTUR.Blog.Domain.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

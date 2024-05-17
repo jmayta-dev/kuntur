@@ -5,14 +5,10 @@ using MW.KUNTUR.Bio.Domain.Interfaces;
 
 namespace MW.KUNTUR.Bio.Application.UseCases.Commands.CreatePerson;
 
-public class CreatePersonCommandHandler : IRequestHandler<CreatePersonCommand, int>
+public class CreatePersonCommandHandler(IUnitOfWorkBio unitOfWorkBio) : IRequestHandler<CreatePersonCommand, int>
 {
-    private readonly IBioRepository _bioRepository;
+    private readonly IUnitOfWorkBio _unitOfWorkBio = unitOfWorkBio;
 
-    public CreatePersonCommandHandler(IBioRepository bioRepository)
-    {
-        _bioRepository = bioRepository;
-    }
     public async Task<int> Handle(CreatePersonCommand request, CancellationToken cancellationToken)
     {
         var newPerson = new Person
@@ -21,7 +17,8 @@ public class CreatePersonCommandHandler : IRequestHandler<CreatePersonCommand, i
             LastName = request.LastName,
             EmailAddress = request.EmailAddress
         };
-        var newPersonId = await _bioRepository.CreatePerson(newPerson, cancellationToken);
+        var newPersonId = await _unitOfWorkBio.BioRepository.CreatePerson(newPerson, cancellationToken);
+        await _unitOfWorkBio.SaveChangesAsync(cancellationToken);
         return newPersonId;
     }
 }
