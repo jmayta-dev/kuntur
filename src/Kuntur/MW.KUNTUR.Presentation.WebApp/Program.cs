@@ -1,7 +1,13 @@
+using MW.KUNTUR.Bio.Application;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+// Add module dependencies
+builder.Services.AddApplicationLayer();
+
 
 var app = builder.Build();
 

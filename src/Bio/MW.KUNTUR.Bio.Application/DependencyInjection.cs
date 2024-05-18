@@ -1,6 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
 
-namespace MW.KUNTUR.Bio.Domain;
+namespace MW.KUNTUR.Bio.Application;
 
 public static class DependencyInjection
 {
