@@ -9,8 +9,7 @@ public class BioDbContext
     //
     // private
     //
-    private Container _container;
-    private Database _database;
+    private Database _database = null!;
     private readonly string? _databaseId;
     private readonly string? _endpoint;
     private readonly string? _primaryKey;
@@ -18,13 +17,13 @@ public class BioDbContext
     //
     // public
     //
-    public Container Container => _container;
+
     #endregion
 
     #region Constructor
     public BioDbContext(IConfiguration configuration)
     {
-        ArgumentNullException.ThrowIfNull(configuration, nameof(configuration));
+        ArgumentNullException.ThrowIfNull(configuration);
 
         _endpoint =
             configuration["CosmosDb__Bio__EndPoint"] ??
@@ -52,16 +51,11 @@ public class BioDbContext
     //
     private async Task InitializeAsync()
     {
-        if (_container is not null)
+        if (_database is not null)
             return;
 
         CosmosClient client = new(_endpoint, _primaryKey);
-        Database database = await client.CreateDatabaseIfNotExistsAsync(_databaseId);
-        ContainerProperties containerProperties = new("Person", "/PersonId");
-        _container = await database.CreateContainerIfNotExistsAsync(
-            containerProperties: containerProperties,
-            throughput: 400
-        );
+        _database = await client.CreateDatabaseIfNotExistsAsync(_databaseId);
     }
     //
     // public methods
@@ -69,6 +63,7 @@ public class BioDbContext
     public async Task<Container> GetOrCreateContainer(
         string containerId, string partitionKey, int throughput = 400)
     {
+        await _initializationTask;
         return await _database.CreateContainerIfNotExistsAsync(containerId, partitionKey, throughput);
     }
     #endregion

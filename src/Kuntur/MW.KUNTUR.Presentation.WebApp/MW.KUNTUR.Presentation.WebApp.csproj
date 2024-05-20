@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <ItemGroup>
     <ProjectReference Include="..\..\Bio\MW.KUNTUR.Bio.Application\MW.KUNTUR.Bio.Application.csproj" />
@@ -8,6 +8,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>10fea7c0-d163-4652-8b77-56c27ad3b616</UserSecretsId>
   </PropertyGroup>
 
 </Project>
